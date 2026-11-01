@@ -1,0 +1,34 @@
+{
+    "version": "0.2.1",
+    "description": "Native 4-deck Milkdrop VJ instrument built on projectM, with MIDI/OSC control, NDI and Spout",
+    "homepage": "https://opendrop.kushie.dev",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/kushiemoon-dev/OpenDrop-VJ/releases/download/v0.2.1/OpenDrop-Native-0.2.1-windows-x64.zip",
+            "hash": "cc5df2b99bc3c1a202cb5dbb6108c29ecb803e8d92bf4f91bc4d9c96070a5a7c",
+            "extract_dir": "OpenDrop-Native-0.2.1-windows-x64"
+        }
+    },
+    "bin": [
+        [
+            "opendrop-app.exe",
+            "opendrop-vj"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "opendrop-app.exe",
+            "OpenDrop VJ"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/kushiemoon-dev/OpenDrop-VJ/releases/download/v$version/OpenDrop-Native-$version-windows-x64.zip",
+                "extract_dir": "OpenDrop-Native-$version-windows-x64"
+            }
+        }
+    }
+}
